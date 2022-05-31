@@ -15,7 +15,7 @@ export default function App() {
     const repositories = response.data;  
     const repositoriesName = []
 
-    repositories.foreach((item) => repositoriesName.push(item.name))
+    repositories.forEach((item) => repositoriesName.push(item.name))
 
     localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName))
     setErro(false)

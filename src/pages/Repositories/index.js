@@ -7,7 +7,7 @@ export default function Repositories() {
   const [repositories, setRepositories]  = useState([])
 
   useEffect(() => {
-    let repositoriesName = localStorage.getItem('RepositoriesName')
+    let repositoriesName = localStorage.getItem('repositoriesName')
 
     console.log(repositoriesName)
     if (repositoriesName) {
